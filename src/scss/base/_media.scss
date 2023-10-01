@@ -1,0 +1,104 @@
+@media (max-width: 1200px) {}
+
+@media (max-width: 992px) {
+    #game {
+        padding: 0 40px;
+
+        #hud {
+            margin-top: 1.5rem;
+            justify-content: space-around;
+        }
+
+        #progressBar {
+            height: 3.5rem;
+
+            &Full {
+                height: 3.5rem;
+            }
+        }
+
+        #question {
+            font-size: 3rem;
+            line-height: 4rem;
+        }
+
+        .choice-container {
+            font-size: 1.5rem;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    #home {
+        h1 {
+            font-size: 4rem;
+        }
+    }
+
+    #finalScore {
+        font-size: 4rem;
+    }
+
+    .justify-center {
+        justify-content: flex-start;
+    }
+
+    #game {
+        width: 100vw;
+        height: 100vh;
+        padding: 30px 20px 0 20px;
+
+        #hud {
+            margin: 1rem;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .hud {
+            &-main-text {
+                margin: 0;
+                font-size: 3.5rem;
+                line-height: 3.5rem;
+            }
+
+            &-prefix {
+                margin-top: 1rem;
+            }
+        }
+
+        #progressBar {
+            margin: 0;
+            height: 3rem;
+
+            &Full {
+                height: 3rem;
+            }
+        }
+
+        #question {
+            margin: 1rem 0;
+            font-size: 2.3rem;
+            line-height: 2.3rem;
+            text-align: center;
+        }
+
+        .choice-container {
+            width: 100%;
+            font-size: 1.3rem;
+        }
+    }
+
+    #loader {
+        width: 7rem;
+        height: 7rem;
+    }
+
+    #highScores {
+        .high-score {
+            font-size: 2rem;
+        }
+    }
+}
+
+@media (max-width: 576px) {}

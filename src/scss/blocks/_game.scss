@@ -1,0 +1,98 @@
+.choice {
+    &-container {
+        display: flex;
+        margin-bottom: 0.5rem;
+        width: 100%;
+        font-size: 1.8rem;
+        border: 0.1rem solid $game-rgba-color;
+        background-color: #FFF;
+
+        &:hover {
+            cursor: pointer;
+            box-shadow: 0 0.4rem 1.4rem 0 $game-rgba-color;
+            transform: translateY(-0.1rem);
+            transition: transform 150ms;
+        }
+    }
+
+    &-prefix {
+        padding: 1.5rem 2.5rem;
+        background-color: $main-color;
+        color: #FFF;
+    }
+
+    &-text {
+        padding: 1.5rem;
+        width: 100%;
+    }
+}
+
+.correct {
+    background-color: $correct-answer;
+}
+
+.incorrect {
+    background-color: $incorrect-answer;
+}
+
+//! HUD
+#hud {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hud {
+    &-prefix {
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    &-main-text {
+        text-align: center;
+    }
+}
+
+#progress {
+    &Bar {
+        margin-top: 1.5rem;
+        width: 20rem;
+        height: 4rem;
+        border: 0.3rem solid $main-color;
+    }
+
+    &BarFull {
+        height: 4rem;
+        background-color: $main-color;
+        width: 0%;
+    }
+}
+
+//! LOADER
+#loader {
+    border: 1.6rem solid #FFFFFF;
+    border-radius: 100%;
+    border-top: 1.6rem solid $main-color;
+    width: 12rem;
+    height: 12rem;
+    animation: spin 1.5s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+//! Start page 
+#currentTime {
+    transform: translateY(-3rem);
+    position: absolute;
+
+    font-size: 2rem;
+    font-weight: bold;
+    color: $main-color;
+}

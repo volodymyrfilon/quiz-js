@@ -1,0 +1,27 @@
+#highScoresList {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 4rem;
+    width: 80%;
+    text-align: center;
+
+    li:first-child {
+        &:before {
+            position: absolute;
+            content: url(/icons/cup.png);
+            transform: translateX(-30px);
+        }
+    }
+}
+
+.high-score {
+    font-size: 2.8rem;
+    margin-bottom: 0.5rem;
+    width: 100%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+
+    &:hover {
+        transform: scale(1.025);
+    }
+}

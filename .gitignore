@@ -8,7 +8,7 @@ package-lock.json
 #? production
 # /build
 # /docs
-/src
+# /src
 /gulp
 gulpfile.js
 webpack.config.js
