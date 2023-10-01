@@ -1,0 +1,1 @@
+!function(){const e=document.getElementById("highScoresList"),o=JSON.parse(localStorage.getItem("highScores"))||[];e.innerHTML=o.map((e=>`<li class="high-score">${e.name}-${e.score}</li>`)).join("")}();
